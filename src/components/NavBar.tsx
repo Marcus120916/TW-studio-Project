@@ -1,9 +1,23 @@
 "use client";
 import Link from 'next/link'; //  Link = snabbare navigering i Next.js
+import { usePathname } from 'next/navigation';
+import react, { useState, useEffect } from 'react';
 
 export default function NavBar() {
+    const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
-    <nav className="fixed top-0 z-50 w-full overflow-visible">
+    <nav className={`fixed top-0 z-50 w-full overflow-visible ${
+      isScrolled ? 'bg-sakura-300/30 py-3' : 'bg-transparent py-5'}`}>
       {/* Bakgrunds-blur */}
       <div className="absolute inset-0 bg-[#FAFAFA]/60 backdrop-blur-md pointer-events-none" />
       

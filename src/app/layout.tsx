@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="sv" className="header-h:-80 anchor-offset-80 scroll-smooth">
       <NavBar />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -33,6 +33,10 @@ export default function RootLayout({
         
         {children}
       </body>
+      <footer className="py-12 text-center text-sm text-gray-600/60 border-t border-gray-200/20">
+        <p>© 2024 Använt React, Next.Js, Typescript och Tailwind</p>
+
+      </footer>
     </html>
   );
 }
