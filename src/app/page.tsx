@@ -39,6 +39,30 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="py-12 sm:py-16 bg-transparent">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center max-w-5xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-display tracking-tight text-[#1E2A4A] mb-4 sm:mb-6">
+                Varför välja oss?
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl font-display tracking-tight text-gray-700 mb-6 sm:mb-10 mx-auto max-w-3xl">
+                Vi är inte bara utvecklare, vi är dina digitala partners. Vi tar oss tid att förstå ditt företag och dina mål, så att vi kan skapa en webbplats som verkligen representerar dig och hjälper dig att växa.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="py-12 sm:py-16 bg-transparent">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center max-w-5xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-display tracking-tight text-[#1E2A4A] mb-4 sm:mb-6">
+                Våra tjänster
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section>
+
+        </section>
       </main>
     </div>
   );
